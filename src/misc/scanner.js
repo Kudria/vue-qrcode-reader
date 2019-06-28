@@ -38,6 +38,9 @@ export function keepScanning(camera, options) {
 
     if (content !== null && content !== contentBefore) {
       detectHandler(event.data);
+      setTimeout(function () {
+        if (content === contentBefore) { contentBefore = null }
+      }, 5000);
     }
 
     if (location !== locationBefore) {

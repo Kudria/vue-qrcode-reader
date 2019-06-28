@@ -20,6 +20,7 @@
   "unpkg": "dist/vue-qrcode-reader.browser.js",
   "module": "index.js",
   "scripts": {
+    "install": "npm run build",
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.dev.js --progress --watch",
     "build": "npm run build:browser && npm run build:common",
     "build:browser": "cross-env NODE_ENV=production webpack --config config/webpack.config.browser.js --progress --hide-modules",
@@ -28,12 +29,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gruhn/vue-qrcode-reader.git"
+    "url": "git+https://github.com/kudria/vue-qrcode-reader.git"
   },
   "bugs": {
-    "url": "https://github.com/gruhn/vue-qrcode-reader/issues"
+    "url": "https://github.com/kudria/vue-qrcode-reader/issues"
   },
-  "homepage": "https://github.com/gruhn/vue-qrcode-reader#readme",
+  "homepage": "https://github.com/kudria/vue-qrcode-reader#readme",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
